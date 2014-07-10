@@ -1,0 +1,59 @@
+{
+	"records":[
+		{
+			"sprig_id":1,
+			"name":"Barbarian",
+			"description" : "A ferocious warrior who uses fury and instinct to bring down foes."
+		},
+		{
+			"sprig_id":2,
+			"name":"Bard",
+			"description" : "A performer whose music works magic-- a wanderer, a tale-teller, and a jack-of-all trades."
+		},
+		{
+			"sprig_id":3,
+			"name":"Cleric",
+			"description" : "Master of divine magic, and a capable warrior as well."
+		},
+		{
+			"sprig_id":4,
+			"name":"Druid",
+			"description" : "One who draws energy from the natural world to cast divine spells and gain strange magical powers."
+		},
+		{
+			"sprig_id":5,
+			"name":"Fighter",
+			"description" : "A warrior with exeptional combat capability and unequaled skill with weapons."
+		},
+		{
+			"sprig_id":6,
+			"name":"Monk",
+			"description" : "A martial artist whos unarmed strikes hit fast and hard-- master of exotic powers."
+		},
+		{
+			"sprig_id":7,
+			"name":"Paladin",
+			"description" : "A champion of justice and destroyer of evil, protected and strengthened by an array of divine powers."
+		},
+		{
+			"sprig_id":8,
+			"name":"Ranger",
+			"description" : "A cunning, skilled warrior of the wilderness."
+		},
+		{
+			"sprig_id":9,
+			"name":"Rogue",
+			"description" : "A tricky, skillful scout and spy who wins the battle by stealth rather than brute force."
+		},
+		{
+			"sprig_id":10,
+			"name":"Sorcerer",
+			"description" : "A spellcaster with inborn magical ability."
+		},
+		{
+			"sprig_id":11,
+			"name":"Wizard",
+			"description" : "A potent spellcaster schooled in the arcane arts."
+		}
+	]
+}

@@ -1,0 +1,26 @@
+# == Schema Information
+#
+# Table name: money
+#
+#  id         :integer          not null, primary key
+#  copper     :integer
+#  silver     :integer
+#  gold       :integer
+#  platinum   :integer
+#  created_at :datetime
+#  updated_at :datetime
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  copper: 1
+  silver: 1
+  gold: 1
+  platinum: 1
+
+two:
+  copper: 1
+  silver: 1
+  gold: 1
+  platinum: 1

@@ -1,0 +1,39 @@
+RubyRPG.MainMenu = function(game) {};
+RubyRPG.MainMenu.prototype = {
+	create: function() {
+
+	this.style = { font: "20pt Courier", fill: "#000000", stroke: "#000000", strokeThickness: 1 };
+	//TODO Make a method to check if logged in user has a preexisting character and then display 'Continue' button.
+
+	this.add.sprite(this.width/2,10,'logo');
+    //Start up title button group
+    this.titleButtons = this.add.group();
+    //Create startButton
+	this.startButton = this.add.button(this.game.width/2,this.game.height/2,'UI',this.startGame,this,null,'buttonLong_beige.png','buttonLong_beige_pressed.png');
+    this.startButton.anchor.setTo(0.5,0.5);
+    //Add it to the title group
+    this.titleButtons.add(this.startButton);
+    //Create Load button
+    this.loadButton = this.add.button(this.game.width/2,(this.game.height/2)+75,'UI',this.loadGame,this,null,'buttonLong_beige.png','buttonLong_beige_pressed.png');
+    this.loadButton.anchor.setTo(0.5,0.5);
+    this.titleButtons.add(this.loadButton);
+
+
+    //Do New Game Text
+    this.titleText = this.add.group();
+
+    this.startText = this.add.text(this.game.width/2,this.game.height/2,'New Game',this.style);
+    this.startText.anchor.setTo(0.5,0.5);
+    this.titleText.add(this.startText);
+
+    this.loadText = this.add.text(this.game.width/2,(this.game.height/2)+75,'Load Game',this.style);
+    this.loadText.anchor.setTo(0.5,0.5);
+    this.titleText.add(this.loadText);
+	},
+	startGame: function() {
+		this.game.state.start('NewGame');
+	},
+  loadGame: function() {
+    this.game.state.start('LoadGame');
+  }
+};

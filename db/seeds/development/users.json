@@ -1,0 +1,18 @@
+// Seeds a example user into the DB
+{
+	"records":[
+		{
+			"sprig_id":1,
+			"email":"admin@example.com",
+			"password":"changeme",
+			"user_name":"Admin",
+			"admin":true
+		},
+		{
+			"sprig_id":2,
+			"email":"user@example.com",
+			"password":"changeme",
+			"user_name":"Test User"
+		}
+	]
+}

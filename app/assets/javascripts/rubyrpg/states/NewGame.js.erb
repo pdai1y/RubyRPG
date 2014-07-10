@@ -1,0 +1,15 @@
+RubyRPG.NewGame = function(game) {
+	this.raceURL = 'api/raceinfo/races.json';
+			$.getJSON(this.raceURL, function(json){
+				this.raceList = {}
+			});
+};
+RubyRPG.NewGame.prototype = {
+	create: function() {
+		this.createMenu = this.add.sprite(0,0,'UI',this,'panelInset_beige.png')
+
+	},
+	render: function() {
+		game.debug.text(this.raceList, 32, 32, '#efefef');
+	}
+};

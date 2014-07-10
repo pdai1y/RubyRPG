@@ -1,0 +1,96 @@
+//Seeds the core races from D&D 3.5 into the DB
+{
+	"records":[
+		{
+			"sprig_id":1,
+	    "name":"Dwarf",
+	    "racialModDesc":"conMod + 2, charMod - 2",
+	    "favoredClass":"Fighter",
+	    "raceDescription":"",
+			"strMod":0,
+			"dexMod":0,
+			"intMod":0,
+			"wisMod":0,
+			"charMod":-2,
+			"conMod":2
+		},
+		{
+			"sprig_id":2,
+	    "name":"Elf",
+	    "racialModDesc":"dexMod + 2, conMod - 2",
+	    "favoredClass":"Wizard",
+	    "raceDescription":"Elves are more often amused than excited, and more likely to be curious than greedy.\nWith such a long life span, they tend to keep a broad perspective on events, remaining aloof and unfazed by petty happenstance.\nWhen pursuing a goal, however, whether an adventurous mission or learning a new skill or art,\nthey can be focused and relentless. They are slow to make friends and enemies, and even slower to forget them.\nThey reply to petty insults with disdain and to serious insults with vengeance. ",
+	    "strMod":0,
+			"dexMod":2,
+			"intMod":0,
+			"wisMod":0,
+			"charMod":0,
+			"conMod":-2
+		},
+		{
+			"sprig_id":3,
+	    "name":"Gnome",
+	    "racialModDesc":"conMod + 2, strMod - 2",
+	    "favoredClass":"Bard",
+	    "raceDescription":"",
+	    "strMod":-2,
+			"dexMod":0,
+			"intMod":0,
+			"wisMod":0,
+			"charMod":0,
+			"conMod":2
+		},
+		{
+			"sprig_id":4,
+	    "name":"HalfElf",
+	    "racialModDesc":"None",
+	    "favoredClass":"Fighter",
+	    "raceDescription":"",
+			"strMod":0,
+			"dexMod":0,
+			"intMod":0,
+			"wisMod":0,
+			"charMod":0,
+			"conMod":0
+		},
+		{
+			"sprig_id":5,
+	    "name":"Halfling",
+	    "racialModDesc":"dexMod + 2, strMod - 2",
+	    "favoredClass":"Rogue",
+	    "raceDescription":"",
+  		"strMod":-2,
+			"dexMod":2,
+			"intMod":0,
+			"wisMod":0,
+			"charMod":0,
+			"conMod":0
+		},
+		{
+			"sprig_id":6,
+	    "name":"HalfOrc",
+	    "racialModDesc":"strMod + 2, charMod - 2, intMod - 2",
+	    "favoredClass":"Barbarian",
+	    "raceDescription":"",
+  		"strMod":2,
+			"dexMod":0,
+			"intMod":-2,
+			"wisMod":0,
+			"charMod":-2,
+			"conMod":0
+		},
+		{
+			"sprig_id":7,
+	    "name":"Human",
+	    "racialModDesc":"None",
+	    "favoredClass":"Any",
+	    "raceDescription":"Humans are the most adaptable, flexible, and ambitious people among the common names.\nThey are diverse in their tastes, morals, customs, and habits.\nOthers accuse them of having little respect for history, but it's only natural that humans,\nwith their relatively short life spans and conModstantly changing cultures,\nwould have a shorter collective memory than dwarves, elves, gnomes, or halflings.",
+  		"strMod":0,
+			"dexMod":0,
+			"intMod":0,
+			"wisMod":0,
+			"charMod":0,
+			"conMod":0
+		}
+	]
+}

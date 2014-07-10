@@ -1,0 +1,17 @@
+RubyRPG.Preloader = function(game) {};
+RubyRPG.Preloader.prototype = {
+	preload: function() {
+		this.game.stage.backgroundColor = '#16181a';
+
+		this.preloadBar = this.add.sprite(this.game.width/2, this.game.height/2, 'preloaderBar');
+		this.preloadBar.anchor.setTo(0.5,0.5);
+
+		this.load.setPreloadSprite(this.preloadBar,0);
+		this.game.load.atlasJSONHash('UI', "<%= asset_path('uipack.png') %>", "<%= asset_path('uipack.json') %>");
+		this.load.image('logo',"<%= asset_path('logo.png') %>");
+
+	},
+	create: function() {
+		this.game.state.start('MainMenu');
+	}
+};

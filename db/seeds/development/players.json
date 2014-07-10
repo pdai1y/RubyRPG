@@ -1,0 +1,31 @@
+// Fake player seed
+{
+	"records":[
+	{
+		"sprig_id":1,
+		"user_id":1,
+		"name":"Test Player",
+		"lvl":1,
+		"race":"Human",
+		"virtue":"Barbarian",
+		"alignment":"Good",
+		"size":"Large",
+		"str":22,
+		"strMod":2,
+		"dex":14,
+		"dexMod":2,
+		"con":13,
+		"conMod":2,
+		"int":2,
+		"intMod":1,
+		"wis":21,
+		"wisMod":2,
+		"char":1,
+		"charMod":12,
+		"HP":100,
+		"AC":22,
+		"BAB":12,
+		"spellRes":12
+	}
+	]
+}

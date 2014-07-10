@@ -1,0 +1,31 @@
+# == Schema Information
+#
+# Table name: api_keys
+#
+#  id           :integer          not null, primary key
+#  user_id      :integer          not null
+#  access_token :string(255)      not null
+#  expires_at   :datetime
+#  active       :boolean          default(TRUE), not null
+#  created_at   :datetime
+#  updated_at   :datetime
+#
+# Indexes
+#
+#  index_api_keys_on_access_token  (access_token) UNIQUE
+#  index_api_keys_on_user_id       (user_id)
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  access_token: MyString
+  expires_at: 2014-06-18 02:26:12
+  user_id: 1
+  active: false
+
+two:
+  access_token: MyString
+  expires_at: 2014-06-18 02:26:12
+  user_id: 1
+  active: false

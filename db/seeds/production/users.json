@@ -1,0 +1,12 @@
+# This information needs to be changed before ' rake db:seed ' is run
+{
+	"records":[
+		{
+			"sprig_id":1,
+			"email":"admin@example.com",
+			"password":"changeme",
+			"user_name":"Admin",
+			"admin":true
+		}
+	]
+}

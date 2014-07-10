@@ -1,0 +1,32 @@
+# == Schema Information
+#
+# Table name: shields
+#
+#  id                :integer          not null, primary key
+#  name              :string(255)
+#  acBonus           :integer
+#  weight            :integer
+#  checkPenalty      :integer
+#  spellFailure      :integer
+#  specialProperties :string(255)
+#  created_at        :datetime
+#  updated_at        :datetime
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  acBonus: 1
+  weight: 1
+  checkPenalty: 1
+  spellFailure: 1
+  specialProperties: MyString
+
+two:
+  name: MyString
+  acBonus: 1
+  weight: 1
+  checkPenalty: 1
+  spellFailure: 1
+  specialProperties: MyString

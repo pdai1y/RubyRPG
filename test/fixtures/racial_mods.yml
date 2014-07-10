@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  str: 1
+  dex: 1
+  int: 1
+  wis: 1
+
+two:
+  str: 1
+  dex: 1
+  int: 1
+  wis: 1

@@ -1,0 +1,10 @@
+var RubyRPG = {};
+RubyRPG.Boot = function(game) {};
+RubyRPG.Boot.prototype = {
+	preload: function() {
+		this.load.image('preloaderBar', "<%= asset_path('loadingFull.png') %>");
+	},
+	create: function() {
+		this.game.state.start('Preloader');
+	}
+};

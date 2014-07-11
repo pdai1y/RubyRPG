@@ -1,0 +1,30 @@
+// Player Prefab
+//
+// All Player related game functions are included within this file
+// Player object can be created by:
+//
+//      this.player = new Player(this.game, x, y);
+//		this.game.add.existing(this.player);
+//
+var Player = function(game, x, y, frame) {
+ 	Phaser.Sprite.call(this, game, x, y, 'player', frame);
+
+ 	// Center sprite
+	this.anchor.setTo(0.5, 0.5);
+
+	// Set up animations
+    this.animations.add('walkDown',[0,1,2,3],6,true);
+    this.animations.add('walkLeft',[4,5,6,7],6,true);
+    this.animations.add('walkRight',[8,9,10,11],6,true);
+    this.animations.add('walkUp',[12,13,14,15],6,true);
+
+    //Enable Physics
+    this.game.physics.p2.enableBody(this);
+    this.body.setZeroDamping();
+    this.body.collideWorldBounds = true;
+};
+
+Player.prototype = Object.create(Phaser.Sprite.prototype);
+Player.prototype.constructor = Player;
+Player.prototype.update = function() {
+};

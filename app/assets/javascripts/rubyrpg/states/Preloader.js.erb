@@ -1,15 +1,24 @@
 RubyRPG.Preloader = function(game) {};
 RubyRPG.Preloader.prototype = {
 	preload: function() {
+		this.game.scale.pageAlignHorizontally = true;
+		this.game.scale.pageAlignVertically = true;
+		this.game.scale.refresh()
+
+
 		this.game.stage.backgroundColor = '#16181a';
 
 		this.preloadBar = this.add.sprite(this.game.width/2, this.game.height/2, 'preloaderBar');
 		this.preloadBar.anchor.setTo(0.5,0.5);
 
 		this.load.setPreloadSprite(this.preloadBar,0);
-		this.game.load.atlasJSONHash('UI', "<%= asset_path('uipack.png') %>", "<%= asset_path('uipack.json') %>");
-		this.load.image('logo',"<%= asset_path('logo.png') %>");
+		this.game.load.atlasJSONHash('UI','game/images/uipack.png','game/images/uipack.json');
+		this.game.load.atlasJSONHash('world','game/images/world.png','game/images/world.json');
+		this.load.image('logo','game/images/logo.png');
 
+		this.game.load.tilemap('MenuMap', 'game/maps/mainmenu.json',null,Phaser.Tilemap.TILED_JSON);
+
+		this.game.load.spritesheet('player', 'game/images/player.png',32,48,16);
 	},
 	create: function() {
 		this.game.state.start('MainMenu');

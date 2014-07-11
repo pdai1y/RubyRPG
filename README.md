@@ -26,6 +26,7 @@ Requirements
 ---
 * Ruby 2.1.1
 * Rails 4.1.1
+* Phaser 2.0.6
 
 Installation
 --------------
@@ -42,7 +43,7 @@ bundle install
 
 ####Development
 ```
-rake db:migrate
+rake db:migrate && rake db:seed
 rails s
 ```
 ####Production
@@ -80,6 +81,23 @@ It is driven by [Rails Admin] [4] & can be located at:
 http://0.0.0.0:3000/admin
 ```
 If you are uncomfortable with ```/admin``` being the default feel free to change ```config/routes.rb``` to whatever you may like.
+
+Default development logins are:
+
+
+Admin
+```
+**Username:** admin@example.com
+**Password:** changeme
+```
+
+
+Standard User
+```
+**Username:** user@example.com
+**Password:** changeme
+```
+
 Version
 ----
 

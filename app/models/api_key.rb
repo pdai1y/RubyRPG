@@ -3,9 +3,9 @@
 # Table name: api_keys
 #
 #  id           :integer          not null, primary key
-#  user_id      :integer          not null
-#  access_token :string(255)      not null
+#  access_token :string           not null
 #  expires_at   :datetime
+#  user_id      :integer          not null
 #  active       :boolean          default(TRUE), not null
 #  created_at   :datetime
 #  updated_at   :datetime

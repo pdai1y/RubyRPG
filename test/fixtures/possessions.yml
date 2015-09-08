@@ -3,9 +3,9 @@
 # Table name: possessions
 #
 #  id         :integer          not null, primary key
-#  name       :string(255)
-#  desc       :string(255)
-#  weight     :string(255)
+#  name       :string
+#  desc       :string
+#  weight     :string
 #  created_at :datetime
 #  updated_at :datetime
 #

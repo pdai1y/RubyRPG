@@ -37,9 +37,10 @@ cd rubyrpg
 bundle install
 ```
 
-##### Configure databases for production, defaults to SQLite
+##### Configure databases
 #####*Only Tested with SQlite & Postgres
 * config/database.yml
+* config/secrets.yml
 
 ####Development
 ```

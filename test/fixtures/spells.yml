@@ -3,8 +3,8 @@
 # Table name: spells
 #
 #  id         :integer          not null, primary key
-#  name       :string(255)
-#  desc       :string(255)
+#  name       :string
+#  desc       :string
 #  created_at :datetime
 #  updated_at :datetime
 #

@@ -3,10 +3,10 @@
 # Table name: protective_items
 #
 #  id                :integer          not null, primary key
-#  name              :string(255)
+#  name              :string
 #  acBonus           :integer
 #  weight            :integer
-#  specialProperties :string(255)
+#  specialProperties :string
 #  created_at        :datetime
 #  updated_at        :datetime
 #

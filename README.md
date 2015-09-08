@@ -24,9 +24,9 @@ The game itself will be a topdown RPG with planned procedural map generation. In
 
 Requirements
 ---
-* Ruby 2.1.1
-* Rails 4.1.1
-* Phaser 2.0.6
+* Ruby 2.2.3
+* Rails 4.2.4
+* Phaser 2.4.3
 
 Installation
 --------------
@@ -53,7 +53,7 @@ RAILS_ENV=production rake assets:precompile
 rails s
 ```
 ###API
-API files are located at: 
+API files are located at:
 ```
 app/api/rubyrpg/
 ```
@@ -62,7 +62,7 @@ And is driven by [GrapeAPI] [2]
 ###APIDOCS
 View realtime responses to API requests thanks to [Swagger] [3] at:
 ```
-http://0.0.0.0:3000/apidcoc
+http://0.0.0.0:3000/apidoc
 ```
 
 ###Client
@@ -74,7 +74,7 @@ app/assets/javascripts/rubyrpg/
 The client is written in Javascript but allows embedded Ruby code to be executed upon compilation time and uses the file extension ```.js.erb```.
 
 ###Web Front
-The front facing website is written in Rails and follows the typical MVC structure. It will allow for user registration/login and more. The web front comes bundled with a WIP admin section for managing users, players, races, etc in the database. 
+The front facing website is written in Rails and follows the typical MVC structure. It will allow for user registration/login and more. The web front comes bundled with a WIP admin section for managing users, players, races, etc in the database.
 
 It is driven by [Rails Admin] [4] & can be located at:
 ```

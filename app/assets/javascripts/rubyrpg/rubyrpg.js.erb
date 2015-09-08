@@ -1,13 +1,14 @@
- window.onload = function() {
- 		//var hostname = getHostName();
-        var game = new Phaser.Game(1024, 768, Phaser.AUTO, 'game');
+window.onload = function() {
+ 	//var hostname = getHostName();
+  var game = new Phaser.Game(1024, 768, Phaser.AUTO, 'game');
 
-        	game.state.add('Boot', RubyRPG.Boot);
-        	game.state.add('Preloader', RubyRPG.Preloader);
-		    game.state.add('MainMenu', RubyRPG.MainMenu);
-        	game.state.add('NewGame', RubyRPG.NewGame);
-        	game.state.add('PlayerCreation',RubyRPG.PlayerCreation);
-        	game.state.add('LoadGame', RubyRPG.Loadgame);
-		    game.state.add('Game', RubyRPG.Game);
-		    game.state.start('Boot');
+  game.state.add('Boot', RubyRPG.Boot);
+  game.state.add('Preloader', RubyRPG.Preloader);
+	game.state.add('MainMenu', RubyRPG.MainMenu);
+  game.state.add('NewGame', RubyRPG.NewGame);
+  game.state.add('PlayerCreation',RubyRPG.PlayerCreation);
+  game.state.add('LoadGame', RubyRPG.Loadgame);
+	game.state.add('Game', RubyRPG.Game);
+
+  game.state.start('Boot');
 };

@@ -3,10 +3,10 @@
 # Table name: races
 #
 #  id              :integer          not null, primary key
-#  name            :string(255)
-#  racialModDesc   :string(255)
-#  favoredClass    :string(255)
-#  raceDescription :string(255)
+#  name            :string
+#  racialModDesc   :string
+#  favoredClass    :string
+#  raceDescription :string
 #  strMod          :integer
 #  dexMod          :integer
 #  intMod          :integer

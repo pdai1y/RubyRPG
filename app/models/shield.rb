@@ -3,12 +3,12 @@
 # Table name: shields
 #
 #  id                :integer          not null, primary key
-#  name              :string(255)
+#  name              :string
 #  acBonus           :integer
 #  weight            :integer
 #  checkPenalty      :integer
 #  spellFailure      :integer
-#  specialProperties :string(255)
+#  specialProperties :string
 #  created_at        :datetime
 #  updated_at        :datetime
 #

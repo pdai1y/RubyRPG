@@ -13,19 +13,22 @@
 
 ActiveRecord::Schema.define(version: 20140618022528) do
 
-  create_table "api_keys", force: true do |t|
-    t.integer  "user_id",                     null: false
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
+  create_table "api_keys", force: :cascade do |t|
     t.string   "access_token",                null: false
     t.datetime "expires_at"
+    t.integer  "user_id",                     null: false
     t.boolean  "active",       default: true, null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  add_index "api_keys", ["access_token"], name: "index_api_keys_on_access_token", unique: true
-  add_index "api_keys", ["user_id"], name: "index_api_keys_on_user_id"
+  add_index "api_keys", ["access_token"], name: "index_api_keys_on_access_token", unique: true, using: :btree
+  add_index "api_keys", ["user_id"], name: "index_api_keys_on_user_id", using: :btree
 
-  create_table "armors", force: true do |t|
+  create_table "armors", force: :cascade do |t|
     t.string   "name"
     t.string   "type"
     t.string   "desc"
@@ -40,21 +43,21 @@ ActiveRecord::Schema.define(version: 20140618022528) do
     t.datetime "updated_at"
   end
 
-  create_table "feats", force: true do |t|
+  create_table "feats", force: :cascade do |t|
     t.string   "name"
     t.string   "desc"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "mobs", force: true do |t|
+  create_table "mobs", force: :cascade do |t|
     t.string   "name"
     t.string   "desc"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "money", force: true do |t|
+  create_table "money", force: :cascade do |t|
     t.integer  "copper"
     t.integer  "silver"
     t.integer  "gold"
@@ -63,7 +66,7 @@ ActiveRecord::Schema.define(version: 20140618022528) do
     t.datetime "updated_at"
   end
 
-  create_table "players", force: true do |t|
+  create_table "players", force: :cascade do |t|
     t.integer  "user_id"
     t.string   "name"
     t.integer  "lvl"
@@ -92,7 +95,7 @@ ActiveRecord::Schema.define(version: 20140618022528) do
     t.datetime "updated_at"
   end
 
-  create_table "possessions", force: true do |t|
+  create_table "possessions", force: :cascade do |t|
     t.string   "name"
     t.string   "desc"
     t.string   "weight"
@@ -100,7 +103,7 @@ ActiveRecord::Schema.define(version: 20140618022528) do
     t.datetime "updated_at"
   end
 
-  create_table "protective_items", force: true do |t|
+  create_table "protective_items", force: :cascade do |t|
     t.string   "name"
     t.integer  "acBonus"
     t.integer  "weight"
@@ -109,7 +112,7 @@ ActiveRecord::Schema.define(version: 20140618022528) do
     t.datetime "updated_at"
   end
 
-  create_table "races", force: true do |t|
+  create_table "races", force: :cascade do |t|
     t.string   "name"
     t.string   "racialModDesc"
     t.string   "favoredClass"
@@ -124,7 +127,7 @@ ActiveRecord::Schema.define(version: 20140618022528) do
     t.datetime "updated_at"
   end
 
-  create_table "shields", force: true do |t|
+  create_table "shields", force: :cascade do |t|
     t.string   "name"
     t.integer  "acBonus"
     t.integer  "weight"
@@ -135,21 +138,21 @@ ActiveRecord::Schema.define(version: 20140618022528) do
     t.datetime "updated_at"
   end
 
-  create_table "special_abilities", force: true do |t|
+  create_table "special_abilities", force: :cascade do |t|
     t.string   "name"
     t.string   "desc"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "spells", force: true do |t|
+  create_table "spells", force: :cascade do |t|
     t.string   "name"
     t.string   "desc"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "users", force: true do |t|
+  create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "",    null: false
     t.string   "encrypted_password",     default: "",    null: false
     t.string   "reset_password_token"
@@ -167,10 +170,10 @@ ActiveRecord::Schema.define(version: 20140618022528) do
     t.datetime "updated_at"
   end
 
-  add_index "users", ["email"], name: "index_users_on_email", unique: true
-  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
+  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
-  create_table "virtues", force: true do |t|
+  create_table "virtues", force: :cascade do |t|
     t.string   "name"
     t.string   "description"
     t.datetime "created_at"

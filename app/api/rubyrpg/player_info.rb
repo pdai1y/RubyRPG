@@ -1,8 +1,5 @@
 module Rubyrpg
 	class PlayerInfo < Grape::API
-		
-		format :json
-
 		# Helps find a player the user is playing by name
 		#
 		#   current_player("John")
@@ -21,8 +18,8 @@ module Rubyrpg
 		post :create do
 			authenticate!
 			Player.create!({
-				user_id: current_user.id, 
-				name: params[:name] 
+				user_id: current_user.id,
+				name: params[:name]
 				})
 		end
 
@@ -41,6 +38,5 @@ module Rubyrpg
 				player.destroy
 			end
 		end
-
 	end
 end

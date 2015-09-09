@@ -1,0 +1,18 @@
+local: &local
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  username: root
+  password:
+
+development:
+  <<: *local
+  database: example_dev
+
+test:
+  <<: *local
+  database: example_test
+
+production:
+  <<: *local
+  database: example_prod

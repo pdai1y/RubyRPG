@@ -3,16 +3,16 @@
 # Table name: armors
 #
 #  id                :integer          not null, primary key
-#  name              :string(255)
-#  type              :string(255)
-#  desc              :string(255)
+#  name              :string
+#  type              :string
+#  desc              :string
 #  acBonus           :integer
 #  maxDex            :integer
 #  checkPenalty      :integer
 #  spellFailure      :integer
-#  speed             :string(255)
+#  speed             :string
 #  weight            :integer
-#  specialProperties :string(255)
+#  specialProperties :string
 #  created_at        :datetime
 #  updated_at        :datetime
 #

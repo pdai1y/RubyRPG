@@ -4,12 +4,12 @@
 #
 #  id         :integer          not null, primary key
 #  user_id    :integer
-#  name       :string(255)
+#  name       :string
 #  lvl        :integer
-#  race       :string(255)
-#  virtue     :string(255)
-#  alignment  :string(255)
-#  size       :string(255)
+#  race       :string
+#  virtue     :string
+#  alignment  :string
+#  size       :string
 #  str        :integer          default(0)
 #  strMod     :integer          default(0)
 #  dex        :integer          default(0)

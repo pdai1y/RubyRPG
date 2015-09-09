@@ -1,10 +1,10 @@
 source 'https://rubygems.org'
-ruby '2.1.1'
+ruby '2.2.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.1'
+gem 'rails', '4.2.4'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+gem 'pg'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
 
@@ -15,10 +15,7 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
-gem 'sdoc', '~> 0.4.0',          group: :doc
-
-# Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-gem 'spring',        group: :development
+gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -36,9 +33,8 @@ gem 'spring',        group: :development
 gem 'grape'
 gem 'grape-entity'
 # API DOCS
-gem 'grape-swagger'
+gem 'grape-swagger', '~> 0.9.0'
 gem 'grape-swagger-rails'
-
 
 gem 'rack-contrib'
 gem 'sprig', '~> 0.1'
@@ -49,8 +45,8 @@ gem 'devise'
 gem 'warden'
 gem 'bootstrap-sass', '~> 3.1.1'
 
-
 group :development do
+  gem 'spring'
   gem 'pry-rails'
   gem 'looksee'
   gem 'awesome_print'
